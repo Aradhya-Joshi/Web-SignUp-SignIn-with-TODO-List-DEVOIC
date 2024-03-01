@@ -21,6 +21,8 @@ form.addEventListener('click',function(event){
     const togglebtn = document.querySelector('#signup-form button');
     togglebtn.textContent = toggleSignUp ? 'Already have an account, Log In' : 'Don\'t have an account, Sign Up';
   
+    const formSub = document.querySelector('#signup-form input[type="submit"]');
+    formSub.value = toggleSignUp ? 'Sign Up' : 'Log In';
   
     console.log(toggleSignUp);
   }
